@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		9B58FEFA2063AA7F00717636 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B58FEF92063AA7F00717636 /* AppDelegate.swift */; };
-		9B58FEFC2063AA7F00717636 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B58FEFB2063AA7F00717636 /* ViewController.swift */; };
+		9B58FEFC2063AA7F00717636 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B58FEFB2063AA7F00717636 /* HomeViewController.swift */; };
 		9B58FEFF2063AA7F00717636 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B58FEFD2063AA7F00717636 /* Main.storyboard */; };
 		9B58FF012063AA7F00717636 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B58FF002063AA7F00717636 /* Assets.xcassets */; };
 		9B58FF042063AA7F00717636 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B58FF022063AA7F00717636 /* LaunchScreen.storyboard */; };
+		9B58FF0D2063ADF800717636 /* GenresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B58FF0C2063ADF800717636 /* GenresViewController.swift */; };
+		D160250C1DEC0BA9A893B83E /* Pods_Rehersal_Tracks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0F9AD8ACDAF1AB7FC64FBBE /* Pods_Rehersal_Tracks.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9B58FEF62063AA7F00717636 /* Rehersal Tracks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rehersal Tracks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B58FEF92063AA7F00717636 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9B58FEFB2063AA7F00717636 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9B58FEFB2063AA7F00717636 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9B58FEFE2063AA7F00717636 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B58FF002063AA7F00717636 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B58FF032063AA7F00717636 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B58FF052063AA7F00717636 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B58FF0C2063ADF800717636 /* GenresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresViewController.swift; sourceTree = "<group>"; };
+		A0F9AD8ACDAF1AB7FC64FBBE /* Pods_Rehersal_Tracks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rehersal_Tracks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB6DA026BECA994E0F5D99DD /* Pods-Rehersal Tracks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rehersal Tracks.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rehersal Tracks/Pods-Rehersal Tracks.release.xcconfig"; sourceTree = "<group>"; };
+		EF0510383E311031A86647BB /* Pods-Rehersal Tracks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rehersal Tracks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rehersal Tracks/Pods-Rehersal Tracks.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D160250C1DEC0BA9A893B83E /* Pods_Rehersal_Tracks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E182A314C1A640F2BE2F83A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF0510383E311031A86647BB /* Pods-Rehersal Tracks.debug.xcconfig */,
+				EB6DA026BECA994E0F5D99DD /* Pods-Rehersal Tracks.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5EDB22A44FB6955C1CF732C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0F9AD8ACDAF1AB7FC64FBBE /* Pods_Rehersal_Tracks.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9B58FEED2063AA7F00717636 = {
 			isa = PBXGroup;
 			children = (
 				9B58FEF82063AA7F00717636 /* Rehersal Tracks */,
 				9B58FEF72063AA7F00717636 /* Products */,
+				0E182A314C1A640F2BE2F83A /* Pods */,
+				5EDB22A44FB6955C1CF732C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +80,23 @@
 		9B58FEF82063AA7F00717636 /* Rehersal Tracks */ = {
 			isa = PBXGroup;
 			children = (
+				9B58FF0B2063AD7D00717636 /* View */,
 				9B58FEF92063AA7F00717636 /* AppDelegate.swift */,
-				9B58FEFB2063AA7F00717636 /* ViewController.swift */,
 				9B58FEFD2063AA7F00717636 /* Main.storyboard */,
 				9B58FF002063AA7F00717636 /* Assets.xcassets */,
 				9B58FF022063AA7F00717636 /* LaunchScreen.storyboard */,
 				9B58FF052063AA7F00717636 /* Info.plist */,
 			);
 			path = "Rehersal Tracks";
+			sourceTree = "<group>";
+		};
+		9B58FF0B2063AD7D00717636 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9B58FF0C2063ADF800717636 /* GenresViewController.swift */,
+				9B58FEFB2063AA7F00717636 /* HomeViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +106,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B58FF082063AA7F00717636 /* Build configuration list for PBXNativeTarget "Rehersal Tracks" */;
 			buildPhases = (
+				1C724A5E533F3B1294920604 /* [CP] Check Pods Manifest.lock */,
 				9B58FEF22063AA7F00717636 /* Sources */,
 				9B58FEF32063AA7F00717636 /* Frameworks */,
 				9B58FEF42063AA7F00717636 /* Resources */,
+				D66BA73ACAFEDDB8C04497C3 /* [CP] Embed Pods Frameworks */,
+				C009183260ECADE0C34FEC33 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +169,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C724A5E533F3B1294920604 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rehersal Tracks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C009183260ECADE0C34FEC33 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rehersal Tracks/Pods-Rehersal Tracks-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D66BA73ACAFEDDB8C04497C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Rehersal Tracks/Pods-Rehersal Tracks-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/HGCircularSlider/HGCircularSlider.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HGCircularSlider.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rehersal Tracks/Pods-Rehersal Tracks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9B58FEF22063AA7F00717636 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B58FEFC2063AA7F00717636 /* ViewController.swift in Sources */,
+				9B58FF0D2063ADF800717636 /* GenresViewController.swift in Sources */,
+				9B58FEFC2063AA7F00717636 /* HomeViewController.swift in Sources */,
 				9B58FEFA2063AA7F00717636 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +367,7 @@
 		};
 		9B58FF092063AA7F00717636 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF0510383E311031A86647BB /* Pods-Rehersal Tracks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +382,7 @@
 		};
 		9B58FF0A2063AA7F00717636 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB6DA026BECA994E0F5D99DD /* Pods-Rehersal Tracks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
