@@ -13,6 +13,10 @@
 		9B58FF012063AA7F00717636 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B58FF002063AA7F00717636 /* Assets.xcassets */; };
 		9B58FF042063AA7F00717636 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B58FF022063AA7F00717636 /* LaunchScreen.storyboard */; };
 		9B58FF0D2063ADF800717636 /* GenresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B58FF0C2063ADF800717636 /* GenresViewController.swift */; };
+		9B58FF0F2063B29200717636 /* RockGenreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B58FF0E2063B29200717636 /* RockGenreTableViewController.swift */; };
+		9B58FF142063B31F00717636 /* RockTrackList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B58FF132063B31F00717636 /* RockTrackList.swift */; };
+		9B58FF162063B43B00717636 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B58FF152063B43B00717636 /* PlayerViewController.swift */; };
+		9B58FF182063B4FB00717636 /* practrack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9B58FF172063B4FB00717636 /* practrack.mp3 */; };
 		D160250C1DEC0BA9A893B83E /* Pods_Rehersal_Tracks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0F9AD8ACDAF1AB7FC64FBBE /* Pods_Rehersal_Tracks.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +29,10 @@
 		9B58FF032063AA7F00717636 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B58FF052063AA7F00717636 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B58FF0C2063ADF800717636 /* GenresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresViewController.swift; sourceTree = "<group>"; };
+		9B58FF0E2063B29200717636 /* RockGenreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockGenreTableViewController.swift; sourceTree = "<group>"; };
+		9B58FF132063B31F00717636 /* RockTrackList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockTrackList.swift; sourceTree = "<group>"; };
+		9B58FF152063B43B00717636 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		9B58FF172063B4FB00717636 /* practrack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = practrack.mp3; sourceTree = "<group>"; };
 		A0F9AD8ACDAF1AB7FC64FBBE /* Pods_Rehersal_Tracks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rehersal_Tracks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6DA026BECA994E0F5D99DD /* Pods-Rehersal Tracks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rehersal Tracks.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rehersal Tracks/Pods-Rehersal Tracks.release.xcconfig"; sourceTree = "<group>"; };
 		EF0510383E311031A86647BB /* Pods-Rehersal Tracks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rehersal Tracks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rehersal Tracks/Pods-Rehersal Tracks.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,10 +88,13 @@
 		9B58FEF82063AA7F00717636 /* Rehersal Tracks */ = {
 			isa = PBXGroup;
 			children = (
-				9B58FF0B2063AD7D00717636 /* View */,
 				9B58FEF92063AA7F00717636 /* AppDelegate.swift */,
+				9B58FF192063BA9400717636 /* Model */,
+				9B58FF0B2063AD7D00717636 /* View */,
+				9B58FF122063B30200717636 /* Controller */,
 				9B58FEFD2063AA7F00717636 /* Main.storyboard */,
 				9B58FF002063AA7F00717636 /* Assets.xcassets */,
+				9B58FF172063B4FB00717636 /* practrack.mp3 */,
 				9B58FF022063AA7F00717636 /* LaunchScreen.storyboard */,
 				9B58FF052063AA7F00717636 /* Info.plist */,
 			);
@@ -97,6 +108,23 @@
 				9B58FEFB2063AA7F00717636 /* HomeViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		9B58FF122063B30200717636 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9B58FF0E2063B29200717636 /* RockGenreTableViewController.swift */,
+				9B58FF152063B43B00717636 /* PlayerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9B58FF192063BA9400717636 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9B58FF132063B31F00717636 /* RockTrackList.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +191,7 @@
 			files = (
 				9B58FF042063AA7F00717636 /* LaunchScreen.storyboard in Resources */,
 				9B58FF012063AA7F00717636 /* Assets.xcassets in Resources */,
+				9B58FF182063B4FB00717636 /* practrack.mp3 in Resources */,
 				9B58FEFF2063AA7F00717636 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,9 +259,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B58FF0F2063B29200717636 /* RockGenreTableViewController.swift in Sources */,
 				9B58FF0D2063ADF800717636 /* GenresViewController.swift in Sources */,
+				9B58FF142063B31F00717636 /* RockTrackList.swift in Sources */,
 				9B58FEFC2063AA7F00717636 /* HomeViewController.swift in Sources */,
 				9B58FEFA2063AA7F00717636 /* AppDelegate.swift in Sources */,
+				9B58FF162063B43B00717636 /* PlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
